@@ -4,7 +4,8 @@ Keep in mind that one can use belongs_to, references, or integer depending on pr
 
 Yes multiple artists can collaborate on the same album or the same song, and sometimes albums contain the same songs that were on an earlier album, but for the sake of example an album only belongs to one artist and a song only belongs to one album.
 
-Artist Table (with seeds)
+Artist Table (with seeds)  
+
 | id | name                  | summary                                                                                                                                                                                                                                                                                                                                                                         |
 |----|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | "Adele"               | “I don’t know she’s young and British and so on pretend this is a long paragraph...”                                                                                                                                                                                                                                                                                            |
