@@ -1,8 +1,7 @@
 This repository contains an example of three tables with chained one-to-many relationships, created as an example for TIY DC's Rails Engineering course.  Feel free to take it and alter it to suit your purposes.  If you use the same database setup that I've got (using PostgreSQL) you can run the rake task for the seeds with: <pre>rake db:seed</pre>  
 If you don't use the same database setup you can just copy & paste the seeds into your console.  You'll also need to copy & paste the migrations and models into your own project setup if your db configuration is different and you don't feel comfortable altering that.  
-<br>  Keep in mind that one can use belongs_to, references, or integer depending on preference, but there are different rules to using integer for relationships.  Choose whichever makes sense to you, but only use one of them.
-<br>
-Yes multiple artists can collaborate on the same album or the same song, and sometimes albums contain the same songs that were on an earlier album, but for the sake of example an album only belongs to one artist and a song only belongs to one album.
+<br>  Keep in mind that one can use belongs_to, references, or integer depending on preference, but there are different rules to using integer for relationships.  Choose whichever makes sense to you, but only use one of them.  
+<br>  Yes multiple artists can collaborate on the same album or the same song, and sometimes albums contain the same songs that were on an earlier album, but for the sake of example an album only belongs to one artist and a song only belongs to one album.
 
 ###Artists Table (with seeds)  
 
