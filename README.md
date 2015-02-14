@@ -1,5 +1,5 @@
 This repository contains an example of three tables with chained one-to-many relationships, created as an example for TIY DC's Rails Engineering course.  Feel free to take it and alter it to suit your purposes.  If you use the same database setup that I've got (using PostgreSQL) you can run the rake task for the seeds with <pre>rake db:seed</pre>.  
-If you don't use the same database setup you can just copy & paste them into your console.
+If you don't use the same database setup you can just copy & paste the seeds into your console.  You'll also need to copy & paste the migrations and models into your own project setup if your db configuration is different and you don't feel comfortable altering that.
 
 Keep in mind that one can use belongs_to, references, or integer depending on preference, but there are different rules to using integer for relationships.  Choose whichever makes sense to you, but only use one of them.
 
@@ -25,6 +25,20 @@ Albums Table (with seeds)
 | 5  | "19"                 | 2008          | 1         |
 | 6  | "Parker Millsap"     | 2014          | 3         |
 | 7  | "Cabbage"            | 2012          | 2         |
+
+Songs Table (with seeds)  
+
+| id | title                        | track_length | album_id |
+|----|------------------------------|--------------|----------|
+| 1  | "Quite Contrary"             | "4:48"       | 6        |
+| 2  | "Rolling in the Deep"        | "3:47"       | 4        |
+| 3  | "Why Walk When You Can Fly?" | "3:31"       | 1        |
+| 4  | "Just Ran Out of Whiskey"    | "4:18"       | 7        |
+| 5  | "Rum Runners"                | "3:38"       | 7        |
+| 6  | "I Take My Chances"          | "3:47"       | 3        |
+| 7  | "Homeless"                   | "3:13"       | 2        |
+| 8  | "Yosemite"                   | "2:53"       | 6        |
+| 9  | "Old Time Religion"          | "3:54"       | 6        |
 
 If you had this set up you might create a new song for an existing album and existing artist with something like the following syntax:
 
